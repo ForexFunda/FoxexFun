@@ -1,0 +1,35 @@
+{
+  "name": "gatsby-transformer-markdown-references",
+  "version": "0.1.8",
+  "description": "Transform markdown nodes to add the necesserary references for bi-directional links",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "build": "npm run clean && ../../node_modules/.bin/tsc -p ./tsconfig.json",
+    "watch": "npm run build -- --watch",
+    "clean": "rm -rf lib",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "gatsby",
+    "transformer",
+    "markdown",
+    "references",
+    "bi-directional links"
+  ],
+  "files": [
+    "index.js",
+    "gatsby-node.js",
+    "lib"
+  ],
+  "author": "Mathieu Dutour <mathieu@dutour.me>",
+  "repository": {
+    "url": "https://github.com/mathieudutour/gatsby-digital-garden",
+    "directory": "packages/gatsby-transformer-markdown-references"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react-dom": "^17.0.8",
+    "gatsby": "^5.0.0"
+  }
+}
